@@ -1,0 +1,14 @@
+﻿resultado,estado,detalle
+1. Seis principios con cinco campos,GENERADO / COMPROBADO,AR01_principios.md; aprobar trazabilidad al PETI
+2. Modelo AS-IS tres capas,GENERADO / COMPROBADO,XML con capas y vista ASIS; abrirlo en Archi
+3. Excel como aplicaciones,GENERADO / COMPROBADO,Tres ApplicationComponent en XML
+4. Vista proceso-aplicación,GENERADO / COMPROBADO,Vista incluida en XML; PNG preliminar
+5. Seis o más entidades,GENERADO / COMPROBADO,"7 entidades, tres de ficha I con sistemas pendientes de verificar"
+6. Fuentes y dueños identificados,GENERADO / COMPROBADO,1 ausencia confirmada; 3 pendientes; 3 dueños pendientes
+7. Datos personales y clasificación,GENERADO / COMPROBADO,Marcados; clasificación adicional propuesta requiere revisión
+8. Modelo TO-BE con trazabilidad,GENERADO / COMPROBADO,Vinculado con principios y caso; revisar contra PETI previo
+9. Al menos diez brechas,GENERADO / COMPROBADO,14 brechas; esfuerzos cualitativos propuestos
+10. Paquetes de trabajo derivados,GENERADO / COMPROBADO,8 paquetes calculados y trazados
+11. Secuencia por dependencias,GENERADO / COMPROBADO,"Orden topológico calculado, no texto fijo"
+12. Tres vistas PNG,GENERADO / COMPROBADO,Hay cuatro PNG de previsualización; exportar tres definitivas desde Archi
+13. Sección 5 y etiqueta v0.10,PENDIENTE VALIDACIÓN,Sección 5 borrador generada; las etiquetas Git requieren repositorio privado del equipo

@@ -1,0 +1,15 @@
+COMANDO: xvfb-run -a /content/EPS_Aguas_del_Sur_Taller10/_Archi_Instalado/Archi/Archi -application com.archimatetool.commandline.app -consoleLog -nosplash --xmlexchange.import /content/EPS_Aguas_del_Sur_Taller10/05_arquitectura/EPS08_arquitectura_intercambio.xml --saveModel /content/EPS_Aguas_del_Sur_Taller10/05_arquitectura/EPS08_modelo_nativo.archimate
+
+STDOUT:
+[0.001s][warning][os,container] Cgroup memory controller path at '/sys/fs/cgroup' seems to have moved to '/../../jupyter-children', detected limits won't be accurate
+[0.001s][warning][os,container] Cgroup cpu controller path at '/sys/fs/cgroup' seems to have moved to '/../../jupyter-children', detected limits won't be accurate
+WARNING: Using incubator modules: jdk.incubator.vector
+SWT SessionManagerDBus: Failed to connect to org.gnome.SessionManager: Failed to execute child process “dbus-launch” (No such file or directory)
+SWT SessionManagerDBus: Failed to connect to org.xfce.SessionManager: Failed to execute child process “dbus-launch” (No such file or directory)
+[XML Exchange] Validating...
+[XML Exchange] Validated!
+[XML Exchange] Importing XML from /content/EPS_Aguas_del_Sur_Taller10/05_arquitectura/EPS08_arquitectura_intercambio.xml
+[XML Exchange] XML Imported!
+[Core] Saved model to '/content/EPS_Aguas_del_Sur_Taller10/05_arquitectura/EPS08_modelo_nativo.archimate'
+
+STDERR:

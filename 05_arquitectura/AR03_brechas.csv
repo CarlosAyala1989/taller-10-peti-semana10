@@ -1,0 +1,15 @@
+﻿codigo,capa,actual,objetivo,tipo_brecha,esfuerzo,dependencias,origen,paquete,id_actual,id_objetivo,justificacion,estado
+BR-01,Tecnología,Switches compartidos IT/OT,Segmentación IT/OT y control fronterizo,Modificar,Alto,Ninguna,Ficha C/H; inventario 6; P01,PT-02,T_SWITCH,TT_SEG,Segregar comunicaciones IT/OT; conservar control industrial,PROPUESTA ACADÉMICA
+BR-02,Aplicación,Micromedición y lectura,Repositorio de lotes y bitácora,Nuevo,Medio,PT-01,Ficha G; inventario 4; P02,PT-03,APP_MICRO,AT_REPO,Conservar y auditar archivos de carga; incidente 11200 conexiones,PROPUESTA ACADÉMICA
+BR-03,Datos,Conexión y usuario,Conexión maestra conciliada,Modificar,Medio,Ninguna,Inventario 5; P03,PT-01,D_CON,DT_CON,Conciliar 3100 discrepancias de categoría tarifaria,PROPUESTA ACADÉMICA
+BR-04,Aplicación,Excel de reclamos,Gestor centralizado de reclamos,Reemplazar,Alto,PT-01,Inventario 2 y 4; P04,PT-04,APP_EX_REC,AT_RECL,Reclamos con expediente y estado único,PROPUESTA ACADÉMICA
+BR-05,Aplicación,SIAF y patrimonio,Capa de integración y conciliación,Modificar,Alto,PT-01 ; PT-02,Inventario 4; P04,PT-05,APP_SIAF,AT_INTEG,"Reemplazar digitación manual, sujeto a interfaces autorizadas",PROPUESTA ACADÉMICA
+BR-06,Aplicación,Excel indicadores SUNASS,Indicadores reguladores validados,Reemplazar,Medio,PT-01 ; PT-03 ; PT-05,Inventario 2; P03,PT-06,APP_EX_SUN,AT_BI,Indicadores regulatorios con origen verificable,PROPUESTA ACADÉMICA
+BR-07,Tecnología,Servidor propio del comercial,Respaldo protegido y restauración probada,Modificar,Medio,Ninguna,Ficha F; P05,PT-07,T_COM,TT_BAK,Respaldo protegido y restauración probada,PROPUESTA ACADÉMICA
+BR-08,Aplicación,Sistema comercial,Gestión de identidades y MFA,Modificar,Medio,Ninguna,Ficha F; P06,PT-08,APP_COM,AT_IAM,MFA disponible pero inactivo; fortalecer gestión de accesos,PROPUESTA ACADÉMICA
+BR-09,Negocio,Política de seguridad ausente,Política de seguridad aprobada,Nuevo,Medio,Ninguna,Ficha B/E; P06,PT-08,Q_SEGU,RT_SEGU,Política formal de seguridad y evidencias,PROPUESTA ACADÉMICA
+BR-10,Negocio,Plan de continuidad ausente,Plan continuidad y pruebas,Nuevo,Alto,Ninguna,Ficha E; P05,PT-07,Q_CONT,RT_CONT,Plan de continuidad operativa y recuperación,PROPUESTA ACADÉMICA
+BR-11,Negocio,Formalización gobierno digital ausente,Gobierno digital formalizado,Modificar,Medio,Ninguna,Ficha B/E; P06,PT-08,Q_GOB,RT_GOB,"Gobierno digital, designaciones, decisiones y actas",PROPUESTA ACADÉMICA
+BR-12,Aplicación,Excel conciliación catastro-facturación,Gobierno de calidad de datos,Reemplazar,Alto,Ninguna,Inventario 2 y 5; P03,PT-01,APP_EX_CAT,AT_CAL,Sustituir conciliación informal por control de calidad y responsabilidades,PROPUESTA ACADÉMICA
+BR-13,Datos,Lectura,Lectura original + auditoría,Modificar,Medio,PT-01,Inventario 5; P02,PT-03,D_LEC,DT_LEC,Definir fuente y conservación de datos de lectura,PROPUESTA ACADÉMICA
+BR-14,Tecnología,Infraestructura industrial SCADA,Servicio de registros y monitoreo,Nuevo,Medio,Ninguna,Ficha H; inventario 6; P01,PT-02,T_SCADA,TT_LOG,Auditoría y supervisión técnica apropiadas al entorno industrial,PROPUESTA ACADÉMICA

@@ -1,0 +1,727 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="EPS Aguas del Sur — Arquitecturas AS-IS y TO-BE" id="id-model-eps08" version="5.0.0">
+  <folder name="Strategy" id="id-d443c1d44e4f43ddb1a8da5476ac5d53" type="strategy"/>
+  <folder name="Business" id="id-b00f228ffaef45d0b815ef1abe837189" type="business">
+    <element xsi:type="archimate:BusinessProcess" name="Catastro comercial de usuarios" id="id-B_CAT">
+      <documentation>AS-IS | Negocio | Proceso documentado en ficha D</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessProcess" name="Lectura de medidores y facturación" id="id-B_LEC">
+      <documentation>AS-IS | Negocio | Proceso documentado en ficha D</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessProcess" name="Cobranza y corte/reconexión" id="id-B_COB">
+      <documentation>AS-IS | Negocio | Proceso documentado en ficha D</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessProcess" name="Atención de reclamos comerciales" id="id-B_REC">
+      <documentation>AS-IS | Negocio | Proceso documentado en ficha D</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessProcess" name="Operación de plantas y redes" id="id-B_OT">
+      <documentation>AS-IS | Negocio | Proceso documentado en ficha D</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessProcess" name="Contrataciones y presupuesto público" id="id-B_PUB">
+      <documentation>AS-IS | Negocio | Proceso documentado en ficha D</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessActor" name="Usuarios del servicio" id="id-A_USU">
+      <documentation>AS-IS | Negocio | Actor inferido del rol/proceso; validar cargo concreto</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessActor" name="Gerencia Comercial" id="id-A_COM">
+      <documentation>AS-IS | Negocio | Actor inferido del rol/proceso; validar cargo concreto</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessActor" name="Personal de micromedición" id="id-A_MIC">
+      <documentation>AS-IS | Negocio | Actor inferido del rol/proceso; validar cargo concreto</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessActor" name="Atención al Usuario" id="id-A_AT">
+      <documentation>AS-IS | Negocio | Actor inferido del rol/proceso; validar cargo concreto</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessActor" name="Operadores de plantas" id="id-A_OTO">
+      <documentation>AS-IS | Negocio | Actor inferido del rol/proceso; validar cargo concreto</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessActor" name="Área de Administración" id="id-A_AD">
+      <documentation>AS-IS | Negocio | Actor inferido del rol/proceso; validar cargo concreto</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessProcess" name="Catastro con datos conciliados" id="id-BT_CAT">
+      <documentation>TO-BE | Negocio | Cambio propuesto para la sección 5.3</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessProcess" name="Lecturas auditables y facturación validada" id="id-BT_LEC">
+      <documentation>TO-BE | Negocio | Cambio propuesto para la sección 5.3</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessProcess" name="Cobranza y conciliación controlada" id="id-BT_COB">
+      <documentation>TO-BE | Negocio | Cambio propuesto para la sección 5.3</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessProcess" name="Atención de reclamos trazable" id="id-BT_REC">
+      <documentation>TO-BE | Negocio | Cambio propuesto para la sección 5.3</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessProcess" name="Operación industrial segmentada" id="id-BT_OT">
+      <documentation>TO-BE | Negocio | Cambio propuesto para la sección 5.3</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessProcess" name="Gestión presupuestal controlada" id="id-BT_PUB">
+      <documentation>TO-BE | Negocio | Cambio propuesto para la sección 5.3</documentation>
+    </element>
+  </folder>
+  <folder name="Application" id="id-3a610df6dccd45c3a67d6a0181c87eba" type="application">
+    <element xsi:type="archimate:ApplicationComponent" name="Sistema comercial" id="id-APP_COM">
+      <documentation>AS-IS | Aplicación | Catastro, facturación, cobranza; servidor propio</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationService" name="Servicio: Sistema comercial" id="id-S_APP_COM">
+      <documentation>AS-IS | Aplicación | Catastro, facturación, cobranza; servidor propio</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationComponent" name="SCADA plantas y reservorios" id="id-APP_SCADA">
+      <documentation>AS-IS | Aplicación | Red industrial, switches compartidos desde 2023</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationService" name="Servicio: SCADA plantas y reservorios" id="id-S_APP_SCADA">
+      <documentation>AS-IS | Aplicación | Red industrial, switches compartidos desde 2023</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationComponent" name="Micromedición y lectura" id="id-APP_MICRO">
+      <documentation>AS-IS | Aplicación | Terminales y archivos por lote no conservados</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationService" name="Servicio: Micromedición y lectura" id="id-S_APP_MICRO">
+      <documentation>AS-IS | Aplicación | Terminales y archivos por lote no conservados</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationComponent" name="SIAF y patrimonio" id="id-APP_SIAF">
+      <documentation>AS-IS | Aplicación | Sistemas del MEF; cliente local</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationService" name="Servicio: SIAF y patrimonio" id="id-S_APP_SIAF">
+      <documentation>AS-IS | Aplicación | Sistemas del MEF; cliente local</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationComponent" name="Atención de reclamos" id="id-APP_REC">
+      <documentation>AS-IS | Aplicación | Formulario web y hoja de cálculo; sin soporte</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationService" name="Servicio: Atención de reclamos" id="id-S_APP_REC">
+      <documentation>AS-IS | Aplicación | Formulario web y hoja de cálculo; sin soporte</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationComponent" name="Excel conciliación catastro-facturación" id="id-APP_EX_CAT">
+      <documentation>AS-IS | Aplicación | Hoja de cálculo operacional</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationService" name="Servicio: Excel conciliación catastro-facturación" id="id-S_APP_EX_CAT">
+      <documentation>AS-IS | Aplicación | Hoja de cálculo operacional</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationComponent" name="Excel de reclamos" id="id-APP_EX_REC">
+      <documentation>AS-IS | Aplicación | Hoja de cálculo operacional</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationService" name="Servicio: Excel de reclamos" id="id-S_APP_EX_REC">
+      <documentation>AS-IS | Aplicación | Hoja de cálculo operacional</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationComponent" name="Excel indicadores SUNASS" id="id-APP_EX_SUN">
+      <documentation>AS-IS | Aplicación | Hoja de cálculo operacional</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationService" name="Servicio: Excel indicadores SUNASS" id="id-S_APP_EX_SUN">
+      <documentation>AS-IS | Aplicación | Hoja de cálculo operacional</documentation>
+    </element>
+    <element xsi:type="archimate:DataObject" name="Conexión y usuario" id="id-D_CON">
+      <documentation>AS-IS | Datos | Inventario sección 5</documentation>
+    </element>
+    <element xsi:type="archimate:DataObject" name="Lectura" id="id-D_LEC">
+      <documentation>AS-IS | Datos | Inventario sección 5</documentation>
+    </element>
+    <element xsi:type="archimate:DataObject" name="Reclamo" id="id-D_REC">
+      <documentation>AS-IS | Datos | Inventario sección 5</documentation>
+    </element>
+    <element xsi:type="archimate:DataObject" name="Trabajador" id="id-D_TRA">
+      <documentation>AS-IS | Datos | Inventario sección 5</documentation>
+    </element>
+    <element xsi:type="archimate:DataObject" name="Proveedor (fuente pendiente)" id="id-D_PRO">
+      <documentation>AS-IS | Datos | Ficha I; origen operativo por verificar</documentation>
+    </element>
+    <element xsi:type="archimate:DataObject" name="Pago proveedor (fuente pendiente)" id="id-D_PAG">
+      <documentation>AS-IS | Datos | Ficha I; origen operativo por verificar</documentation>
+    </element>
+    <element xsi:type="archimate:DataObject" name="Cuenta usuario ERP (fuente pendiente)" id="id-D_CUE">
+      <documentation>AS-IS | Datos | Ficha I; origen operativo por verificar</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationComponent" name="Sistema comercial con controles" id="id-AT_COM">
+      <documentation>TO-BE | Aplicación | Objetivo propuesto; sujeto a factibilidad, presupuesto y marco legal</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationService" name="Servicio: Sistema comercial con controles" id="id-ST_AT_COM">
+      <documentation>TO-BE | Aplicación | </documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationComponent" name="Lectura y micromedición verificadas" id="id-AT_MIC">
+      <documentation>TO-BE | Aplicación | Objetivo propuesto; sujeto a factibilidad, presupuesto y marco legal</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationService" name="Servicio: Lectura y micromedición verificadas" id="id-ST_AT_MIC">
+      <documentation>TO-BE | Aplicación | </documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationComponent" name="Repositorio de lotes y bitácora" id="id-AT_REPO">
+      <documentation>TO-BE | Aplicación | Objetivo propuesto; sujeto a factibilidad, presupuesto y marco legal</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationService" name="Servicio: Repositorio de lotes y bitácora" id="id-ST_AT_REPO">
+      <documentation>TO-BE | Aplicación | </documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationComponent" name="Capa de integración y conciliación" id="id-AT_INTEG">
+      <documentation>TO-BE | Aplicación | Objetivo propuesto; sujeto a factibilidad, presupuesto y marco legal</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationService" name="Servicio: Capa de integración y conciliación" id="id-ST_AT_INTEG">
+      <documentation>TO-BE | Aplicación | </documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationComponent" name="Gestor centralizado de reclamos" id="id-AT_RECL">
+      <documentation>TO-BE | Aplicación | Objetivo propuesto; sujeto a factibilidad, presupuesto y marco legal</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationService" name="Servicio: Gestor centralizado de reclamos" id="id-ST_AT_RECL">
+      <documentation>TO-BE | Aplicación | </documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationComponent" name="SCADA con accesos controlados" id="id-AT_SCADA">
+      <documentation>TO-BE | Aplicación | Objetivo propuesto; sujeto a factibilidad, presupuesto y marco legal</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationService" name="Servicio: SCADA con accesos controlados" id="id-ST_AT_SCADA">
+      <documentation>TO-BE | Aplicación | </documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationComponent" name="Indicadores reguladores validados" id="id-AT_BI">
+      <documentation>TO-BE | Aplicación | Objetivo propuesto; sujeto a factibilidad, presupuesto y marco legal</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationService" name="Servicio: Indicadores reguladores validados" id="id-ST_AT_BI">
+      <documentation>TO-BE | Aplicación | </documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationComponent" name="SIAF (integración autorizada)" id="id-AT_SIAF">
+      <documentation>TO-BE | Aplicación | Objetivo propuesto; sujeto a factibilidad, presupuesto y marco legal</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationService" name="Servicio: SIAF (integración autorizada)" id="id-ST_AT_SIAF">
+      <documentation>TO-BE | Aplicación | </documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationComponent" name="Gestión de identidades y MFA" id="id-AT_IAM">
+      <documentation>TO-BE | Aplicación | Objetivo propuesto; sujeto a factibilidad, presupuesto y marco legal</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationService" name="Servicio: Gestión de identidades y MFA" id="id-ST_AT_IAM">
+      <documentation>TO-BE | Aplicación | </documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationComponent" name="Gobierno de calidad de datos" id="id-AT_CAL">
+      <documentation>TO-BE | Aplicación | Objetivo propuesto; sujeto a factibilidad, presupuesto y marco legal</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationService" name="Servicio: Gobierno de calidad de datos" id="id-ST_AT_CAL">
+      <documentation>TO-BE | Aplicación | </documentation>
+    </element>
+    <element xsi:type="archimate:DataObject" name="Conexión maestra conciliada" id="id-DT_CON">
+      <documentation>TO-BE | Datos | Fuente autorizada y dueño requieren aceptación formal</documentation>
+    </element>
+    <element xsi:type="archimate:DataObject" name="Lectura original + auditoría" id="id-DT_LEC">
+      <documentation>TO-BE | Datos | Fuente autorizada y dueño requieren aceptación formal</documentation>
+    </element>
+    <element xsi:type="archimate:DataObject" name="Reclamo único con trazabilidad" id="id-DT_REC">
+      <documentation>TO-BE | Datos | Fuente autorizada y dueño requieren aceptación formal</documentation>
+    </element>
+    <element xsi:type="archimate:DataObject" name="Trabajador con clasificación" id="id-DT_TRA">
+      <documentation>TO-BE | Datos | Fuente autorizada y dueño requieren aceptación formal</documentation>
+    </element>
+    <element xsi:type="archimate:DataObject" name="Proveedor: fuente por designar" id="id-DT_PRO">
+      <documentation>TO-BE | Datos | Fuente autorizada y dueño requieren aceptación formal</documentation>
+    </element>
+    <element xsi:type="archimate:DataObject" name="Pago a proveedor: fuente por designar" id="id-DT_PAG">
+      <documentation>TO-BE | Datos | Fuente autorizada y dueño requieren aceptación formal</documentation>
+    </element>
+    <element xsi:type="archimate:DataObject" name="Cuenta y permisos auditables" id="id-DT_CUE">
+      <documentation>TO-BE | Datos | Fuente autorizada y dueño requieren aceptación formal</documentation>
+    </element>
+  </folder>
+  <folder name="Technology &amp; Physical" id="id-f2e73278c6184a79929efcf27c31c0fd" type="technology">
+    <element xsi:type="archimate:Node" name="Servidor propio del comercial" id="id-T_COM">
+      <documentation>AS-IS | Tecnología | Inventario 6</documentation>
+    </element>
+    <element xsi:type="archimate:Node" name="Infraestructura industrial SCADA" id="id-T_SCADA">
+      <documentation>AS-IS | Tecnología | Inventario 6</documentation>
+    </element>
+    <element xsi:type="archimate:Device" name="Terminales portátiles de lectura" id="id-T_MIC">
+      <documentation>AS-IS | Tecnología | Inventario 6</documentation>
+    </element>
+    <element xsi:type="archimate:Node" name="Cliente local SIAF" id="id-T_SIAF">
+      <documentation>AS-IS | Tecnología | Inventario 6</documentation>
+    </element>
+    <element xsi:type="archimate:Node" name="Hosting reclamos" id="id-T_WEB">
+      <documentation>AS-IS | Tecnología | Inventario 6</documentation>
+    </element>
+    <element xsi:type="archimate:Device" name="140 estaciones de trabajo" id="id-T_PC">
+      <documentation>AS-IS | Tecnología | Inventario 6</documentation>
+    </element>
+    <element xsi:type="archimate:Device" name="Switches compartidos IT/OT" id="id-T_SWITCH">
+      <documentation>AS-IS | Tecnología | Inventario 6</documentation>
+    </element>
+    <element xsi:type="archimate:CommunicationNetwork" name="Red administrativa" id="id-T_ADMIN">
+      <documentation>AS-IS | Tecnología | Inventario 6</documentation>
+    </element>
+    <element xsi:type="archimate:CommunicationNetwork" name="Red industrial conectada a administrativa" id="id-T_OT">
+      <documentation>AS-IS | Tecnología | Inventario 6</documentation>
+    </element>
+    <element xsi:type="archimate:CommunicationNetwork" name="Radioenlaces plantas-reservorios" id="id-T_RADIO">
+      <documentation>AS-IS | Tecnología | Inventario 6</documentation>
+    </element>
+    <element xsi:type="archimate:CommunicationNetwork" name="Segmentación IT/OT y control fronterizo" id="id-TT_SEG">
+      <documentation>TO-BE | Tecnología | Objetivo de diseño; no es equipo adquirido</documentation>
+    </element>
+    <element xsi:type="archimate:Device" name="Switches segmentados" id="id-TT_SW">
+      <documentation>TO-BE | Tecnología | Objetivo de diseño; no es equipo adquirido</documentation>
+    </element>
+    <element xsi:type="archimate:Node" name="Respaldo protegido y restauración probada" id="id-TT_BAK">
+      <documentation>TO-BE | Tecnología | Objetivo de diseño; no es equipo adquirido</documentation>
+    </element>
+    <element xsi:type="archimate:Node" name="Servidor comercial protegido" id="id-TT_COM">
+      <documentation>TO-BE | Tecnología | Objetivo de diseño; no es equipo adquirido</documentation>
+    </element>
+    <element xsi:type="archimate:Node" name="Plataforma SCADA segmentada" id="id-TT_OT">
+      <documentation>TO-BE | Tecnología | Objetivo de diseño; no es equipo adquirido</documentation>
+    </element>
+    <element xsi:type="archimate:TechnologyService" name="Servicio de registros y monitoreo" id="id-TT_LOG">
+      <documentation>TO-BE | Tecnología | Objetivo de diseño; no es equipo adquirido</documentation>
+    </element>
+    <element xsi:type="archimate:Device" name="Terminales y estaciones con controles" id="id-TT_END">
+      <documentation>TO-BE | Tecnología | Objetivo de diseño; no es equipo adquirido</documentation>
+    </element>
+  </folder>
+  <folder name="Motivation" id="id-c09ae6ad9d7a48e79dbec54e37b5f307" type="motivation">
+    <element xsi:type="archimate:Assessment" name="Segmentación efectiva ausente" id="id-Q_SEG">
+      <documentation>AS-IS | Motivación | Hallazgo documentado, no es un componente tecnológico</documentation>
+    </element>
+    <element xsi:type="archimate:Assessment" name="Política de seguridad ausente" id="id-Q_SEGU">
+      <documentation>AS-IS | Motivación | Hallazgo documentado, no es un componente tecnológico</documentation>
+    </element>
+    <element xsi:type="archimate:Assessment" name="Plan de continuidad ausente" id="id-Q_CONT">
+      <documentation>AS-IS | Motivación | Hallazgo documentado, no es un componente tecnológico</documentation>
+    </element>
+    <element xsi:type="archimate:Assessment" name="Formalización gobierno digital ausente" id="id-Q_GOB">
+      <documentation>AS-IS | Motivación | Hallazgo documentado, no es un componente tecnológico</documentation>
+    </element>
+    <element xsi:type="archimate:Assessment" name="MFA disponible pero inactivo" id="id-Q_MFA">
+      <documentation>AS-IS | Motivación | Hallazgo documentado, no es un componente tecnológico</documentation>
+    </element>
+    <element xsi:type="archimate:Requirement" name="Política de seguridad aprobada" id="id-RT_SEGU">
+      <documentation>TO-BE | Motivación | Requisito organizativo propuesto</documentation>
+    </element>
+    <element xsi:type="archimate:Requirement" name="Plan continuidad y pruebas" id="id-RT_CONT">
+      <documentation>TO-BE | Motivación | Requisito organizativo propuesto</documentation>
+    </element>
+    <element xsi:type="archimate:Requirement" name="Gobierno digital formalizado" id="id-RT_GOB">
+      <documentation>TO-BE | Motivación | Requisito organizativo propuesto</documentation>
+    </element>
+  </folder>
+  <folder name="Implementation &amp; Migration" id="id-39f301a4fab64aa9acadf960df068ac7" type="implementation_migration"/>
+  <folder name="Other" id="id-175d864621ad4969953a15a130c41038" type="other"/>
+  <folder name="Relations" id="id-5929d04f0c7d43568d09814f95bd6e08" type="relations">
+    <element xsi:type="archimate:AssignmentRelationship" name="Assignment" id="id-rel-0001" source="id-A_USU" target="id-B_REC"/>
+    <element xsi:type="archimate:AssignmentRelationship" name="Assignment" id="id-rel-0002" source="id-A_COM" target="id-B_CAT"/>
+    <element xsi:type="archimate:AssignmentRelationship" name="Assignment" id="id-rel-0003" source="id-A_MIC" target="id-B_LEC"/>
+    <element xsi:type="archimate:AssignmentRelationship" name="Assignment" id="id-rel-0004" source="id-A_COM" target="id-B_COB"/>
+    <element xsi:type="archimate:AssignmentRelationship" name="Assignment" id="id-rel-0005" source="id-A_AT" target="id-B_REC"/>
+    <element xsi:type="archimate:AssignmentRelationship" name="Assignment" id="id-rel-0006" source="id-A_OTO" target="id-B_OT"/>
+    <element xsi:type="archimate:AssignmentRelationship" name="Assignment" id="id-rel-0007" source="id-A_AD" target="id-B_PUB"/>
+    <element xsi:type="archimate:RealizationRelationship" name="Realization" id="id-rel-0008" source="id-APP_COM" target="id-S_APP_COM"/>
+    <element xsi:type="archimate:RealizationRelationship" name="Realization" id="id-rel-0009" source="id-APP_SCADA" target="id-S_APP_SCADA"/>
+    <element xsi:type="archimate:RealizationRelationship" name="Realization" id="id-rel-0010" source="id-APP_MICRO" target="id-S_APP_MICRO"/>
+    <element xsi:type="archimate:RealizationRelationship" name="Realization" id="id-rel-0011" source="id-APP_SIAF" target="id-S_APP_SIAF"/>
+    <element xsi:type="archimate:RealizationRelationship" name="Realization" id="id-rel-0012" source="id-APP_REC" target="id-S_APP_REC"/>
+    <element xsi:type="archimate:RealizationRelationship" name="Realization" id="id-rel-0013" source="id-APP_EX_CAT" target="id-S_APP_EX_CAT"/>
+    <element xsi:type="archimate:RealizationRelationship" name="Realization" id="id-rel-0014" source="id-APP_EX_REC" target="id-S_APP_EX_REC"/>
+    <element xsi:type="archimate:RealizationRelationship" name="Realization" id="id-rel-0015" source="id-APP_EX_SUN" target="id-S_APP_EX_SUN"/>
+    <element xsi:type="archimate:ServingRelationship" name="Serving" id="id-rel-0016" source="id-S_APP_COM" target="id-B_CAT"/>
+    <element xsi:type="archimate:AssociationRelationship" name="Association" id="id-rel-0017" source="id-APP_COM" target="id-B_CAT"/>
+    <element xsi:type="archimate:ServingRelationship" name="Serving" id="id-rel-0018" source="id-S_APP_COM" target="id-B_COB"/>
+    <element xsi:type="archimate:AssociationRelationship" name="Association" id="id-rel-0019" source="id-APP_COM" target="id-B_COB"/>
+    <element xsi:type="archimate:ServingRelationship" name="Serving" id="id-rel-0020" source="id-S_APP_MICRO" target="id-B_LEC"/>
+    <element xsi:type="archimate:AssociationRelationship" name="Association" id="id-rel-0021" source="id-APP_MICRO" target="id-B_LEC"/>
+    <element xsi:type="archimate:ServingRelationship" name="Serving" id="id-rel-0022" source="id-S_APP_COM" target="id-B_LEC"/>
+    <element xsi:type="archimate:AssociationRelationship" name="Association" id="id-rel-0023" source="id-APP_COM" target="id-B_LEC"/>
+    <element xsi:type="archimate:ServingRelationship" name="Serving" id="id-rel-0024" source="id-S_APP_SCADA" target="id-B_OT"/>
+    <element xsi:type="archimate:AssociationRelationship" name="Association" id="id-rel-0025" source="id-APP_SCADA" target="id-B_OT"/>
+    <element xsi:type="archimate:ServingRelationship" name="Serving" id="id-rel-0026" source="id-S_APP_SIAF" target="id-B_PUB"/>
+    <element xsi:type="archimate:AssociationRelationship" name="Association" id="id-rel-0027" source="id-APP_SIAF" target="id-B_PUB"/>
+    <element xsi:type="archimate:ServingRelationship" name="Serving" id="id-rel-0028" source="id-S_APP_REC" target="id-B_REC"/>
+    <element xsi:type="archimate:AssociationRelationship" name="Association" id="id-rel-0029" source="id-APP_REC" target="id-B_REC"/>
+    <element xsi:type="archimate:ServingRelationship" name="Serving" id="id-rel-0030" source="id-S_APP_EX_CAT" target="id-B_CAT"/>
+    <element xsi:type="archimate:AssociationRelationship" name="Association" id="id-rel-0031" source="id-APP_EX_CAT" target="id-B_CAT"/>
+    <element xsi:type="archimate:ServingRelationship" name="Serving" id="id-rel-0032" source="id-S_APP_EX_REC" target="id-B_REC"/>
+    <element xsi:type="archimate:AssociationRelationship" name="Association" id="id-rel-0033" source="id-APP_EX_REC" target="id-B_REC"/>
+    <element xsi:type="archimate:ServingRelationship" name="Serving" id="id-rel-0034" source="id-S_APP_EX_SUN" target="id-B_PUB"/>
+    <element xsi:type="archimate:AssociationRelationship" name="Association" id="id-rel-0035" source="id-APP_EX_SUN" target="id-B_PUB"/>
+    <element xsi:type="archimate:FlowRelationship" name="Flow" id="id-rel-0036" source="id-APP_MICRO" target="id-APP_COM"/>
+    <element xsi:type="archimate:FlowRelationship" name="Flow" id="id-rel-0037" source="id-APP_COM" target="id-APP_SIAF"/>
+    <element xsi:type="archimate:FlowRelationship" name="Flow" id="id-rel-0038" source="id-APP_REC" target="id-APP_EX_REC"/>
+    <element xsi:type="archimate:FlowRelationship" name="Flow" id="id-rel-0039" source="id-APP_EX_REC" target="id-APP_COM"/>
+    <element xsi:type="archimate:AccessRelationship" name="Access" id="id-rel-0040" source="id-APP_COM" target="id-D_CON"/>
+    <element xsi:type="archimate:AccessRelationship" name="Access" id="id-rel-0041" source="id-APP_MICRO" target="id-D_LEC"/>
+    <element xsi:type="archimate:AccessRelationship" name="Access" id="id-rel-0042" source="id-APP_EX_REC" target="id-D_REC"/>
+    <element xsi:type="archimate:AccessRelationship" name="Access" id="id-rel-0043" source="id-APP_SIAF" target="id-D_TRA"/>
+    <element xsi:type="archimate:AssociationRelationship" name="Association" id="id-rel-0044" source="id-T_COM" target="id-APP_COM"/>
+    <element xsi:type="archimate:AssociationRelationship" name="Association" id="id-rel-0045" source="id-T_SCADA" target="id-APP_SCADA"/>
+    <element xsi:type="archimate:AssociationRelationship" name="Association" id="id-rel-0046" source="id-T_MIC" target="id-APP_MICRO"/>
+    <element xsi:type="archimate:AssociationRelationship" name="Association" id="id-rel-0047" source="id-T_SIAF" target="id-APP_SIAF"/>
+    <element xsi:type="archimate:AssociationRelationship" name="Association" id="id-rel-0048" source="id-T_WEB" target="id-APP_REC"/>
+    <element xsi:type="archimate:AssociationRelationship" name="Association" id="id-rel-0049" source="id-T_PC" target="id-APP_EX_CAT"/>
+    <element xsi:type="archimate:AssociationRelationship" name="Association" id="id-rel-0050" source="id-T_PC" target="id-APP_EX_REC"/>
+    <element xsi:type="archimate:AssociationRelationship" name="Association" id="id-rel-0051" source="id-T_PC" target="id-APP_EX_SUN"/>
+    <element xsi:type="archimate:AssociationRelationship" name="Association" id="id-rel-0052" source="id-T_ADMIN" target="id-T_SWITCH"/>
+    <element xsi:type="archimate:AssociationRelationship" name="Association" id="id-rel-0053" source="id-T_OT" target="id-T_SWITCH"/>
+    <element xsi:type="archimate:AssociationRelationship" name="Association" id="id-rel-0054" source="id-T_SCADA" target="id-T_OT"/>
+    <element xsi:type="archimate:AssociationRelationship" name="Association" id="id-rel-0055" source="id-T_SCADA" target="id-T_RADIO"/>
+    <element xsi:type="archimate:RealizationRelationship" name="Realization" id="id-rel-0056" source="id-AT_COM" target="id-ST_AT_COM"/>
+    <element xsi:type="archimate:RealizationRelationship" name="Realization" id="id-rel-0057" source="id-AT_MIC" target="id-ST_AT_MIC"/>
+    <element xsi:type="archimate:RealizationRelationship" name="Realization" id="id-rel-0058" source="id-AT_REPO" target="id-ST_AT_REPO"/>
+    <element xsi:type="archimate:RealizationRelationship" name="Realization" id="id-rel-0059" source="id-AT_INTEG" target="id-ST_AT_INTEG"/>
+    <element xsi:type="archimate:RealizationRelationship" name="Realization" id="id-rel-0060" source="id-AT_RECL" target="id-ST_AT_RECL"/>
+    <element xsi:type="archimate:RealizationRelationship" name="Realization" id="id-rel-0061" source="id-AT_SCADA" target="id-ST_AT_SCADA"/>
+    <element xsi:type="archimate:RealizationRelationship" name="Realization" id="id-rel-0062" source="id-AT_BI" target="id-ST_AT_BI"/>
+    <element xsi:type="archimate:RealizationRelationship" name="Realization" id="id-rel-0063" source="id-AT_SIAF" target="id-ST_AT_SIAF"/>
+    <element xsi:type="archimate:RealizationRelationship" name="Realization" id="id-rel-0064" source="id-AT_IAM" target="id-ST_AT_IAM"/>
+    <element xsi:type="archimate:RealizationRelationship" name="Realization" id="id-rel-0065" source="id-AT_CAL" target="id-ST_AT_CAL"/>
+    <element xsi:type="archimate:ServingRelationship" name="Serving" id="id-rel-0066" source="id-ST_AT_COM" target="id-BT_CAT"/>
+    <element xsi:type="archimate:ServingRelationship" name="Serving" id="id-rel-0067" source="id-ST_AT_MIC" target="id-BT_LEC"/>
+    <element xsi:type="archimate:ServingRelationship" name="Serving" id="id-rel-0068" source="id-ST_AT_REPO" target="id-BT_LEC"/>
+    <element xsi:type="archimate:ServingRelationship" name="Serving" id="id-rel-0069" source="id-ST_AT_COM" target="id-BT_COB"/>
+    <element xsi:type="archimate:ServingRelationship" name="Serving" id="id-rel-0070" source="id-ST_AT_INTEG" target="id-BT_COB"/>
+    <element xsi:type="archimate:ServingRelationship" name="Serving" id="id-rel-0071" source="id-ST_AT_RECL" target="id-BT_REC"/>
+    <element xsi:type="archimate:ServingRelationship" name="Serving" id="id-rel-0072" source="id-ST_AT_SCADA" target="id-BT_OT"/>
+    <element xsi:type="archimate:ServingRelationship" name="Serving" id="id-rel-0073" source="id-ST_AT_BI" target="id-BT_PUB"/>
+    <element xsi:type="archimate:ServingRelationship" name="Serving" id="id-rel-0074" source="id-ST_AT_SIAF" target="id-BT_PUB"/>
+    <element xsi:type="archimate:ServingRelationship" name="Serving" id="id-rel-0075" source="id-ST_AT_CAL" target="id-BT_CAT"/>
+    <element xsi:type="archimate:FlowRelationship" name="Flow" id="id-rel-0076" source="id-AT_MIC" target="id-AT_REPO"/>
+    <element xsi:type="archimate:FlowRelationship" name="Flow" id="id-rel-0077" source="id-AT_REPO" target="id-AT_INTEG"/>
+    <element xsi:type="archimate:FlowRelationship" name="Flow" id="id-rel-0078" source="id-AT_INTEG" target="id-AT_COM"/>
+    <element xsi:type="archimate:FlowRelationship" name="Flow" id="id-rel-0079" source="id-AT_RECL" target="id-AT_INTEG"/>
+    <element xsi:type="archimate:FlowRelationship" name="Flow" id="id-rel-0080" source="id-AT_INTEG" target="id-AT_SIAF"/>
+    <element xsi:type="archimate:FlowRelationship" name="Flow" id="id-rel-0081" source="id-AT_COM" target="id-AT_BI"/>
+    <element xsi:type="archimate:AccessRelationship" name="Access" id="id-rel-0082" source="id-AT_CAL" target="id-DT_CON"/>
+    <element xsi:type="archimate:AccessRelationship" name="Access" id="id-rel-0083" source="id-AT_REPO" target="id-DT_LEC"/>
+    <element xsi:type="archimate:AccessRelationship" name="Access" id="id-rel-0084" source="id-AT_RECL" target="id-DT_REC"/>
+    <element xsi:type="archimate:AccessRelationship" name="Access" id="id-rel-0085" source="id-AT_IAM" target="id-DT_CUE"/>
+    <element xsi:type="archimate:AccessRelationship" name="Access" id="id-rel-0086" source="id-AT_SIAF" target="id-DT_PRO"/>
+    <element xsi:type="archimate:AccessRelationship" name="Access" id="id-rel-0087" source="id-AT_SIAF" target="id-DT_PAG"/>
+    <element xsi:type="archimate:AssociationRelationship" name="Association" id="id-rel-0088" source="id-TT_COM" target="id-AT_COM"/>
+    <element xsi:type="archimate:AssociationRelationship" name="Association" id="id-rel-0089" source="id-TT_OT" target="id-AT_SCADA"/>
+    <element xsi:type="archimate:AssociationRelationship" name="Association" id="id-rel-0090" source="id-TT_END" target="id-AT_MIC"/>
+    <element xsi:type="archimate:AssociationRelationship" name="Association" id="id-rel-0091" source="id-TT_SEG" target="id-AT_SCADA"/>
+    <element xsi:type="archimate:AssociationRelationship" name="Association" id="id-rel-0092" source="id-TT_LOG" target="id-AT_REPO"/>
+    <element xsi:type="archimate:AssociationRelationship" name="Association" id="id-rel-0093" source="id-TT_BAK" target="id-AT_COM"/>
+  </folder>
+  <folder name="Views" id="id-5ca16762c0624aa8a59c61124f4706eb" type="diagrams">
+    <element xsi:type="archimate:ArchimateDiagramModel" name="01 — Arquitectura actual AS-IS (tres capas)" id="id-view-ASIS">
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-ASIS-B_CAT" targetConnections="id-vconn-ASIS-2 id-vconn-ASIS-17 id-vconn-ASIS-31" fillColor="#f0e3cb" archimateElement="id-B_CAT">
+        <bounds x="50" y="85" width="320" height="76"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-ASIS-B_LEC" targetConnections="id-vconn-ASIS-3 id-vconn-ASIS-21 id-vconn-ASIS-23" fillColor="#f0e3cb" archimateElement="id-B_LEC">
+        <bounds x="410" y="85" width="320" height="76"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-ASIS-B_COB" targetConnections="id-vconn-ASIS-4 id-vconn-ASIS-19" fillColor="#f0e3cb" archimateElement="id-B_COB">
+        <bounds x="770" y="85" width="320" height="76"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-ASIS-B_REC" targetConnections="id-vconn-ASIS-1 id-vconn-ASIS-5 id-vconn-ASIS-29 id-vconn-ASIS-33" fillColor="#f0e3cb" archimateElement="id-B_REC">
+        <bounds x="1130" y="85" width="320" height="76"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-ASIS-B_OT" targetConnections="id-vconn-ASIS-6 id-vconn-ASIS-25" fillColor="#f0e3cb" archimateElement="id-B_OT">
+        <bounds x="50" y="189" width="320" height="76"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-ASIS-B_PUB" targetConnections="id-vconn-ASIS-7 id-vconn-ASIS-27 id-vconn-ASIS-35" fillColor="#f0e3cb" archimateElement="id-B_PUB">
+        <bounds x="410" y="189" width="320" height="76"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-ASIS-A_USU" fillColor="#f0e3cb" archimateElement="id-A_USU">
+        <bounds x="770" y="189" width="320" height="76"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-vconn-ASIS-1" source="id-vnode-ASIS-A_USU" target="id-vnode-ASIS-B_REC" archimateRelationship="id-rel-0001"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-ASIS-A_COM" fillColor="#f0e3cb" archimateElement="id-A_COM">
+        <bounds x="1130" y="189" width="320" height="76"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-vconn-ASIS-2" source="id-vnode-ASIS-A_COM" target="id-vnode-ASIS-B_CAT" archimateRelationship="id-rel-0002"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-vconn-ASIS-4" source="id-vnode-ASIS-A_COM" target="id-vnode-ASIS-B_COB" archimateRelationship="id-rel-0004"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-ASIS-A_MIC" fillColor="#f0e3cb" archimateElement="id-A_MIC">
+        <bounds x="50" y="293" width="320" height="76"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-vconn-ASIS-3" source="id-vnode-ASIS-A_MIC" target="id-vnode-ASIS-B_LEC" archimateRelationship="id-rel-0003"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-ASIS-A_AT" fillColor="#f0e3cb" archimateElement="id-A_AT">
+        <bounds x="410" y="293" width="320" height="76"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-vconn-ASIS-5" source="id-vnode-ASIS-A_AT" target="id-vnode-ASIS-B_REC" archimateRelationship="id-rel-0005"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-ASIS-A_OTO" fillColor="#f0e3cb" archimateElement="id-A_OTO">
+        <bounds x="770" y="293" width="320" height="76"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-vconn-ASIS-6" source="id-vnode-ASIS-A_OTO" target="id-vnode-ASIS-B_OT" archimateRelationship="id-rel-0006"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-ASIS-A_AD" fillColor="#f0e3cb" archimateElement="id-A_AD">
+        <bounds x="1130" y="293" width="320" height="76"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-vconn-ASIS-7" source="id-vnode-ASIS-A_AD" target="id-vnode-ASIS-B_PUB" archimateRelationship="id-rel-0007"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-ASIS-APP_COM" targetConnections="id-vconn-ASIS-36 id-vconn-ASIS-39 id-vconn-ASIS-44" fillColor="#cfe5f5" archimateElement="id-APP_COM">
+        <bounds x="50" y="450" width="320" height="76"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-vconn-ASIS-17" source="id-vnode-ASIS-APP_COM" target="id-vnode-ASIS-B_CAT" archimateRelationship="id-rel-0017"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-vconn-ASIS-19" source="id-vnode-ASIS-APP_COM" target="id-vnode-ASIS-B_COB" archimateRelationship="id-rel-0019"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-vconn-ASIS-23" source="id-vnode-ASIS-APP_COM" target="id-vnode-ASIS-B_LEC" archimateRelationship="id-rel-0023"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-vconn-ASIS-37" source="id-vnode-ASIS-APP_COM" target="id-vnode-ASIS-APP_SIAF" archimateRelationship="id-rel-0037"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-ASIS-APP_SCADA" targetConnections="id-vconn-ASIS-45" fillColor="#cfe5f5" archimateElement="id-APP_SCADA">
+        <bounds x="410" y="450" width="320" height="76"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-vconn-ASIS-25" source="id-vnode-ASIS-APP_SCADA" target="id-vnode-ASIS-B_OT" archimateRelationship="id-rel-0025"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-ASIS-APP_MICRO" targetConnections="id-vconn-ASIS-46" fillColor="#cfe5f5" archimateElement="id-APP_MICRO">
+        <bounds x="770" y="450" width="320" height="76"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-vconn-ASIS-21" source="id-vnode-ASIS-APP_MICRO" target="id-vnode-ASIS-B_LEC" archimateRelationship="id-rel-0021"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-vconn-ASIS-36" source="id-vnode-ASIS-APP_MICRO" target="id-vnode-ASIS-APP_COM" archimateRelationship="id-rel-0036"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-ASIS-APP_SIAF" targetConnections="id-vconn-ASIS-37 id-vconn-ASIS-47" fillColor="#cfe5f5" archimateElement="id-APP_SIAF">
+        <bounds x="1130" y="450" width="320" height="76"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-vconn-ASIS-27" source="id-vnode-ASIS-APP_SIAF" target="id-vnode-ASIS-B_PUB" archimateRelationship="id-rel-0027"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-ASIS-APP_REC" targetConnections="id-vconn-ASIS-48" fillColor="#cfe5f5" archimateElement="id-APP_REC">
+        <bounds x="50" y="554" width="320" height="76"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-vconn-ASIS-29" source="id-vnode-ASIS-APP_REC" target="id-vnode-ASIS-B_REC" archimateRelationship="id-rel-0029"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-vconn-ASIS-38" source="id-vnode-ASIS-APP_REC" target="id-vnode-ASIS-APP_EX_REC" archimateRelationship="id-rel-0038"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-ASIS-APP_EX_CAT" targetConnections="id-vconn-ASIS-49" fillColor="#cfe5f5" archimateElement="id-APP_EX_CAT">
+        <bounds x="410" y="554" width="320" height="76"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-vconn-ASIS-31" source="id-vnode-ASIS-APP_EX_CAT" target="id-vnode-ASIS-B_CAT" archimateRelationship="id-rel-0031"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-ASIS-APP_EX_REC" targetConnections="id-vconn-ASIS-38 id-vconn-ASIS-50" fillColor="#cfe5f5" archimateElement="id-APP_EX_REC">
+        <bounds x="770" y="554" width="320" height="76"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-vconn-ASIS-33" source="id-vnode-ASIS-APP_EX_REC" target="id-vnode-ASIS-B_REC" archimateRelationship="id-rel-0033"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-vconn-ASIS-39" source="id-vnode-ASIS-APP_EX_REC" target="id-vnode-ASIS-APP_COM" archimateRelationship="id-rel-0039"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-ASIS-APP_EX_SUN" targetConnections="id-vconn-ASIS-51" fillColor="#cfe5f5" archimateElement="id-APP_EX_SUN">
+        <bounds x="1130" y="554" width="320" height="76"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-vconn-ASIS-35" source="id-vnode-ASIS-APP_EX_SUN" target="id-vnode-ASIS-B_PUB" archimateRelationship="id-rel-0035"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-ASIS-T_COM" fillColor="#e0ebde" archimateElement="id-T_COM">
+        <bounds x="50" y="790" width="320" height="76"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-vconn-ASIS-44" source="id-vnode-ASIS-T_COM" target="id-vnode-ASIS-APP_COM" archimateRelationship="id-rel-0044"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-ASIS-T_SCADA" fillColor="#e0ebde" archimateElement="id-T_SCADA">
+        <bounds x="410" y="790" width="320" height="76"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-vconn-ASIS-45" source="id-vnode-ASIS-T_SCADA" target="id-vnode-ASIS-APP_SCADA" archimateRelationship="id-rel-0045"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-vconn-ASIS-54" source="id-vnode-ASIS-T_SCADA" target="id-vnode-ASIS-T_OT" archimateRelationship="id-rel-0054"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-vconn-ASIS-55" source="id-vnode-ASIS-T_SCADA" target="id-vnode-ASIS-T_RADIO" archimateRelationship="id-rel-0055"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-ASIS-T_MIC" fillColor="#e0ebde" archimateElement="id-T_MIC">
+        <bounds x="770" y="790" width="320" height="76"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-vconn-ASIS-46" source="id-vnode-ASIS-T_MIC" target="id-vnode-ASIS-APP_MICRO" archimateRelationship="id-rel-0046"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-ASIS-T_SIAF" fillColor="#e0ebde" archimateElement="id-T_SIAF">
+        <bounds x="1130" y="790" width="320" height="76"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-vconn-ASIS-47" source="id-vnode-ASIS-T_SIAF" target="id-vnode-ASIS-APP_SIAF" archimateRelationship="id-rel-0047"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-ASIS-T_WEB" fillColor="#e0ebde" archimateElement="id-T_WEB">
+        <bounds x="50" y="894" width="320" height="76"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-vconn-ASIS-48" source="id-vnode-ASIS-T_WEB" target="id-vnode-ASIS-APP_REC" archimateRelationship="id-rel-0048"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-ASIS-T_PC" fillColor="#e0ebde" archimateElement="id-T_PC">
+        <bounds x="410" y="894" width="320" height="76"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-vconn-ASIS-49" source="id-vnode-ASIS-T_PC" target="id-vnode-ASIS-APP_EX_CAT" archimateRelationship="id-rel-0049"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-vconn-ASIS-50" source="id-vnode-ASIS-T_PC" target="id-vnode-ASIS-APP_EX_REC" archimateRelationship="id-rel-0050"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-vconn-ASIS-51" source="id-vnode-ASIS-T_PC" target="id-vnode-ASIS-APP_EX_SUN" archimateRelationship="id-rel-0051"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-ASIS-T_SWITCH" targetConnections="id-vconn-ASIS-52 id-vconn-ASIS-53" fillColor="#e0ebde" archimateElement="id-T_SWITCH">
+        <bounds x="770" y="894" width="320" height="76"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-ASIS-T_ADMIN" fillColor="#e0ebde" archimateElement="id-T_ADMIN">
+        <bounds x="1130" y="894" width="320" height="76"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-vconn-ASIS-52" source="id-vnode-ASIS-T_ADMIN" target="id-vnode-ASIS-T_SWITCH" archimateRelationship="id-rel-0052"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-ASIS-T_OT" targetConnections="id-vconn-ASIS-54" fillColor="#e0ebde" archimateElement="id-T_OT">
+        <bounds x="50" y="998" width="320" height="76"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-vconn-ASIS-53" source="id-vnode-ASIS-T_OT" target="id-vnode-ASIS-T_SWITCH" archimateRelationship="id-rel-0053"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-ASIS-T_RADIO" targetConnections="id-vconn-ASIS-55" fillColor="#e0ebde" archimateElement="id-T_RADIO">
+        <bounds x="410" y="998" width="320" height="76"/>
+      </child>
+    </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="03 — Arquitectura objetivo TO-BE (tres capas)" id="id-view-TOBE">
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-TOBE-BT_CAT" fillColor="#f0e3cb" archimateElement="id-BT_CAT">
+        <bounds x="50" y="85" width="320" height="76"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-TOBE-BT_LEC" fillColor="#f0e3cb" archimateElement="id-BT_LEC">
+        <bounds x="410" y="85" width="320" height="76"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-TOBE-BT_COB" fillColor="#f0e3cb" archimateElement="id-BT_COB">
+        <bounds x="770" y="85" width="320" height="76"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-TOBE-BT_REC" fillColor="#f0e3cb" archimateElement="id-BT_REC">
+        <bounds x="1130" y="85" width="320" height="76"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-TOBE-BT_OT" fillColor="#f0e3cb" archimateElement="id-BT_OT">
+        <bounds x="50" y="189" width="320" height="76"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-TOBE-BT_PUB" fillColor="#f0e3cb" archimateElement="id-BT_PUB">
+        <bounds x="410" y="189" width="320" height="76"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-TOBE-AT_COM" targetConnections="id-vconn-TOBE-78 id-vconn-TOBE-88 id-vconn-TOBE-93" fillColor="#cfe5f5" archimateElement="id-AT_COM">
+        <bounds x="50" y="370" width="320" height="76"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-vconn-TOBE-81" source="id-vnode-TOBE-AT_COM" target="id-vnode-TOBE-AT_BI" archimateRelationship="id-rel-0081"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-TOBE-AT_MIC" targetConnections="id-vconn-TOBE-90" fillColor="#cfe5f5" archimateElement="id-AT_MIC">
+        <bounds x="410" y="370" width="320" height="76"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-vconn-TOBE-76" source="id-vnode-TOBE-AT_MIC" target="id-vnode-TOBE-AT_REPO" archimateRelationship="id-rel-0076"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-TOBE-AT_REPO" targetConnections="id-vconn-TOBE-76 id-vconn-TOBE-92" fillColor="#cfe5f5" archimateElement="id-AT_REPO">
+        <bounds x="770" y="370" width="320" height="76"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-vconn-TOBE-77" source="id-vnode-TOBE-AT_REPO" target="id-vnode-TOBE-AT_INTEG" archimateRelationship="id-rel-0077"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-TOBE-AT_INTEG" targetConnections="id-vconn-TOBE-77 id-vconn-TOBE-79" fillColor="#cfe5f5" archimateElement="id-AT_INTEG">
+        <bounds x="1130" y="370" width="320" height="76"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-vconn-TOBE-78" source="id-vnode-TOBE-AT_INTEG" target="id-vnode-TOBE-AT_COM" archimateRelationship="id-rel-0078"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-vconn-TOBE-80" source="id-vnode-TOBE-AT_INTEG" target="id-vnode-TOBE-AT_SIAF" archimateRelationship="id-rel-0080"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-TOBE-AT_RECL" fillColor="#cfe5f5" archimateElement="id-AT_RECL">
+        <bounds x="50" y="474" width="320" height="76"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-vconn-TOBE-79" source="id-vnode-TOBE-AT_RECL" target="id-vnode-TOBE-AT_INTEG" archimateRelationship="id-rel-0079"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-TOBE-AT_SCADA" targetConnections="id-vconn-TOBE-89 id-vconn-TOBE-91" fillColor="#cfe5f5" archimateElement="id-AT_SCADA">
+        <bounds x="410" y="474" width="320" height="76"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-TOBE-AT_BI" targetConnections="id-vconn-TOBE-81" fillColor="#cfe5f5" archimateElement="id-AT_BI">
+        <bounds x="770" y="474" width="320" height="76"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-TOBE-AT_SIAF" targetConnections="id-vconn-TOBE-80" fillColor="#cfe5f5" archimateElement="id-AT_SIAF">
+        <bounds x="1130" y="474" width="320" height="76"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-TOBE-AT_IAM" fillColor="#cfe5f5" archimateElement="id-AT_IAM">
+        <bounds x="50" y="578" width="320" height="76"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-TOBE-AT_CAL" fillColor="#cfe5f5" archimateElement="id-AT_CAL">
+        <bounds x="410" y="578" width="320" height="76"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-TOBE-TT_SEG" fillColor="#e0ebde" archimateElement="id-TT_SEG">
+        <bounds x="50" y="790" width="320" height="76"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-vconn-TOBE-91" source="id-vnode-TOBE-TT_SEG" target="id-vnode-TOBE-AT_SCADA" archimateRelationship="id-rel-0091"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-TOBE-TT_SW" fillColor="#e0ebde" archimateElement="id-TT_SW">
+        <bounds x="410" y="790" width="320" height="76"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-TOBE-TT_BAK" fillColor="#e0ebde" archimateElement="id-TT_BAK">
+        <bounds x="770" y="790" width="320" height="76"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-vconn-TOBE-93" source="id-vnode-TOBE-TT_BAK" target="id-vnode-TOBE-AT_COM" archimateRelationship="id-rel-0093"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-TOBE-TT_COM" fillColor="#e0ebde" archimateElement="id-TT_COM">
+        <bounds x="1130" y="790" width="320" height="76"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-vconn-TOBE-88" source="id-vnode-TOBE-TT_COM" target="id-vnode-TOBE-AT_COM" archimateRelationship="id-rel-0088"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-TOBE-TT_OT" fillColor="#e0ebde" archimateElement="id-TT_OT">
+        <bounds x="50" y="894" width="320" height="76"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-vconn-TOBE-89" source="id-vnode-TOBE-TT_OT" target="id-vnode-TOBE-AT_SCADA" archimateRelationship="id-rel-0089"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-TOBE-TT_LOG" fillColor="#e0ebde" archimateElement="id-TT_LOG">
+        <bounds x="410" y="894" width="320" height="76"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-vconn-TOBE-92" source="id-vnode-TOBE-TT_LOG" target="id-vnode-TOBE-AT_REPO" archimateRelationship="id-rel-0092"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-TOBE-TT_END" fillColor="#e0ebde" archimateElement="id-TT_END">
+        <bounds x="770" y="894" width="320" height="76"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-vconn-TOBE-90" source="id-vnode-TOBE-TT_END" target="id-vnode-TOBE-AT_MIC" archimateRelationship="id-rel-0090"/>
+      </child>
+    </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="02 — Cooperación proceso-aplicación" id="id-view-COOP">
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-COOP-B_CAT" targetConnections="id-vconn-COOP-17 id-vconn-COOP-31" fillColor="#f0e3cb" archimateElement="id-B_CAT">
+        <bounds x="55" y="90" width="360" height="78"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-COOP-B_LEC" targetConnections="id-vconn-COOP-21 id-vconn-COOP-23" fillColor="#f0e3cb" archimateElement="id-B_LEC">
+        <bounds x="55" y="210" width="360" height="78"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-COOP-B_COB" targetConnections="id-vconn-COOP-19" fillColor="#f0e3cb" archimateElement="id-B_COB">
+        <bounds x="55" y="330" width="360" height="78"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-COOP-B_REC" targetConnections="id-vconn-COOP-29 id-vconn-COOP-33" fillColor="#f0e3cb" archimateElement="id-B_REC">
+        <bounds x="55" y="450" width="360" height="78"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-COOP-B_OT" targetConnections="id-vconn-COOP-25" fillColor="#f0e3cb" archimateElement="id-B_OT">
+        <bounds x="55" y="570" width="360" height="78"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-COOP-B_PUB" targetConnections="id-vconn-COOP-27 id-vconn-COOP-35" fillColor="#f0e3cb" archimateElement="id-B_PUB">
+        <bounds x="55" y="690" width="360" height="78"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-COOP-APP_COM" targetConnections="id-vconn-COOP-36 id-vconn-COOP-39" fillColor="#cfe5f5" archimateElement="id-APP_COM">
+        <bounds x="760" y="90" width="360" height="74"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-vconn-COOP-17" source="id-vnode-COOP-APP_COM" target="id-vnode-COOP-B_CAT" archimateRelationship="id-rel-0017"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-vconn-COOP-19" source="id-vnode-COOP-APP_COM" target="id-vnode-COOP-B_COB" archimateRelationship="id-rel-0019"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-vconn-COOP-23" source="id-vnode-COOP-APP_COM" target="id-vnode-COOP-B_LEC" archimateRelationship="id-rel-0023"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-vconn-COOP-37" source="id-vnode-COOP-APP_COM" target="id-vnode-COOP-APP_SIAF" archimateRelationship="id-rel-0037"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-COOP-APP_SCADA" fillColor="#cfe5f5" archimateElement="id-APP_SCADA">
+        <bounds x="760" y="194" width="360" height="74"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-vconn-COOP-25" source="id-vnode-COOP-APP_SCADA" target="id-vnode-COOP-B_OT" archimateRelationship="id-rel-0025"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-COOP-APP_MICRO" fillColor="#cfe5f5" archimateElement="id-APP_MICRO">
+        <bounds x="760" y="298" width="360" height="74"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-vconn-COOP-21" source="id-vnode-COOP-APP_MICRO" target="id-vnode-COOP-B_LEC" archimateRelationship="id-rel-0021"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-vconn-COOP-36" source="id-vnode-COOP-APP_MICRO" target="id-vnode-COOP-APP_COM" archimateRelationship="id-rel-0036"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-COOP-APP_SIAF" targetConnections="id-vconn-COOP-37" fillColor="#cfe5f5" archimateElement="id-APP_SIAF">
+        <bounds x="760" y="402" width="360" height="74"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-vconn-COOP-27" source="id-vnode-COOP-APP_SIAF" target="id-vnode-COOP-B_PUB" archimateRelationship="id-rel-0027"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-COOP-APP_REC" fillColor="#cfe5f5" archimateElement="id-APP_REC">
+        <bounds x="760" y="506" width="360" height="74"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-vconn-COOP-29" source="id-vnode-COOP-APP_REC" target="id-vnode-COOP-B_REC" archimateRelationship="id-rel-0029"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-vconn-COOP-38" source="id-vnode-COOP-APP_REC" target="id-vnode-COOP-APP_EX_REC" archimateRelationship="id-rel-0038"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-COOP-APP_EX_CAT" fillColor="#cfe5f5" archimateElement="id-APP_EX_CAT">
+        <bounds x="760" y="610" width="360" height="74"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-vconn-COOP-31" source="id-vnode-COOP-APP_EX_CAT" target="id-vnode-COOP-B_CAT" archimateRelationship="id-rel-0031"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-COOP-APP_EX_REC" targetConnections="id-vconn-COOP-38" fillColor="#cfe5f5" archimateElement="id-APP_EX_REC">
+        <bounds x="760" y="714" width="360" height="74"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-vconn-COOP-33" source="id-vnode-COOP-APP_EX_REC" target="id-vnode-COOP-B_REC" archimateRelationship="id-rel-0033"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-vconn-COOP-39" source="id-vnode-COOP-APP_EX_REC" target="id-vnode-COOP-APP_COM" archimateRelationship="id-rel-0039"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-COOP-APP_EX_SUN" fillColor="#cfe5f5" archimateElement="id-APP_EX_SUN">
+        <bounds x="760" y="818" width="360" height="74"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-vconn-COOP-35" source="id-vnode-COOP-APP_EX_SUN" target="id-vnode-COOP-B_PUB" archimateRelationship="id-rel-0035"/>
+      </child>
+    </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="04 — Datos: AS-IS (izquierda) y TO-BE (derecha)" id="id-view-DATOS">
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-DATOS-D_CON" fillColor="#e8dcf1" archimateElement="id-D_CON">
+        <bounds x="70" y="85" width="450" height="78"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-DATOS-D_LEC" fillColor="#e8dcf1" archimateElement="id-D_LEC">
+        <bounds x="70" y="195" width="450" height="78"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-DATOS-D_REC" fillColor="#e8dcf1" archimateElement="id-D_REC">
+        <bounds x="70" y="305" width="450" height="78"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-DATOS-D_TRA" fillColor="#e8dcf1" archimateElement="id-D_TRA">
+        <bounds x="70" y="415" width="450" height="78"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-DATOS-D_PRO" fillColor="#e8dcf1" archimateElement="id-D_PRO">
+        <bounds x="70" y="525" width="450" height="78"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-DATOS-D_PAG" fillColor="#e8dcf1" archimateElement="id-D_PAG">
+        <bounds x="70" y="635" width="450" height="78"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-DATOS-D_CUE" fillColor="#e8dcf1" archimateElement="id-D_CUE">
+        <bounds x="70" y="745" width="450" height="78"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-DATOS-DT_CON" fillColor="#e8dcf1" archimateElement="id-DT_CON">
+        <bounds x="750" y="85" width="450" height="78"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-DATOS-DT_LEC" fillColor="#e8dcf1" archimateElement="id-DT_LEC">
+        <bounds x="750" y="195" width="450" height="78"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-DATOS-DT_REC" fillColor="#e8dcf1" archimateElement="id-DT_REC">
+        <bounds x="750" y="305" width="450" height="78"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-DATOS-DT_TRA" fillColor="#e8dcf1" archimateElement="id-DT_TRA">
+        <bounds x="750" y="415" width="450" height="78"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-DATOS-DT_PRO" fillColor="#e8dcf1" archimateElement="id-DT_PRO">
+        <bounds x="750" y="525" width="450" height="78"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-DATOS-DT_PAG" fillColor="#e8dcf1" archimateElement="id-DT_PAG">
+        <bounds x="750" y="635" width="450" height="78"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-DATOS-DT_CUE" fillColor="#e8dcf1" archimateElement="id-DT_CUE">
+        <bounds x="750" y="745" width="450" height="78"/>
+      </child>
+    </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="05 — Controles y gobierno: hallazgos y requisitos" id="id-view-GOBIERNO">
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-GOBIERNO-Q_SEG" fillColor="#f2dddc" archimateElement="id-Q_SEG">
+        <bounds x="70" y="95" width="450" height="84"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-GOBIERNO-Q_SEGU" fillColor="#f2dddc" archimateElement="id-Q_SEGU">
+        <bounds x="70" y="230" width="450" height="84"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-GOBIERNO-Q_CONT" fillColor="#f2dddc" archimateElement="id-Q_CONT">
+        <bounds x="70" y="365" width="450" height="84"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-GOBIERNO-Q_GOB" fillColor="#f2dddc" archimateElement="id-Q_GOB">
+        <bounds x="70" y="500" width="450" height="84"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-GOBIERNO-Q_MFA" fillColor="#f2dddc" archimateElement="id-Q_MFA">
+        <bounds x="70" y="635" width="450" height="84"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-GOBIERNO-RT_SEGU" fillColor="#f2dddc" archimateElement="id-RT_SEGU">
+        <bounds x="750" y="95" width="450" height="84"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-GOBIERNO-RT_CONT" fillColor="#f2dddc" archimateElement="id-RT_CONT">
+        <bounds x="750" y="230" width="450" height="84"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-vnode-GOBIERNO-RT_GOB" fillColor="#f2dddc" archimateElement="id-RT_GOB">
+        <bounds x="750" y="365" width="450" height="84"/>
+      </child>
+    </element>
+  </folder>
+  <purpose>Caso ficticio, propuesta académica. Fuentes FICHA.md e inventario del curso, Semana 10. Estados AS-IS documentados; TO-BE propuesto.</purpose>
+</archimate:model>

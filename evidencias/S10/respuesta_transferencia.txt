@@ -1,0 +1,2 @@
+Pregunta de transferencia: ¿qué riesgo afrontaría una organización si modela mal su arquitectura?
+Una arquitectura mal representada puede omitir comunicaciones entre la red SCADA y la administrativa, generando proyectos que no reduzcan la exposición de la operación del agua potable. Si tampoco se conserva la trazabilidad de lecturas, la organización podría repetir errores de facturación sin capacidad de reconstruirlos ni responder adecuadamente ante el regulador.

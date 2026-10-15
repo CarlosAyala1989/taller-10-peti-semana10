@@ -1,0 +1,21 @@
+BRECHAS: 14
+capa        tipo_brecha
+Aplicación  Modificar      2
+            Nuevo          1
+            Reemplazar     3
+Datos       Modificar      2
+Negocio     Modificar      1
+            Nuevo          2
+Tecnología  Modificar      2
+            Nuevo          1
+
+PAQUETES Y FASES DE EJECUCIÓN
+paquete                          nombre        dependencias  fase_recalculada
+  PT-01     Gobierno y calidad del dato             Ninguna                 1
+  PT-02 Protección de la red industrial             Ninguna                 1
+  PT-07      Continuidad y recuperación             Ninguna                 1
+  PT-08    Seguridad y gobierno digital             Ninguna                 1
+  PT-03        Trazabilidad de lecturas               PT-01                 2
+  PT-04             Gestión de reclamos               PT-01                 2
+  PT-05       Integraciones autorizadas        PT-01; PT-02                 2
+  PT-06        Indicadores regulatorios PT-01; PT-03; PT-05                 3

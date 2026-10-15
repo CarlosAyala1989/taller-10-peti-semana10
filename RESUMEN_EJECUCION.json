@@ -1,0 +1,19 @@
+{
+  "organizacion": "EPS Aguas del Sur S.A. (caso ficticio)",
+  "fecha_generacion_utc": "2026-10-15T22:22:46.279440+00:00",
+  "fuentes_descargadas": true,
+  "archi": {
+    "intentado": true,
+    "correcto": true,
+    "detalle": "Conversión ejecutada: revisar el modelo visualmente en Archi",
+    "archivo_nativo": "EPS08_modelo_nativo.archimate"
+  },
+  "principios": 6,
+  "procesos": 6,
+  "aplicaciones_actuales": 8,
+  "entidades": 7,
+  "brechas": 14,
+  "paquetes": 8,
+  "graficos_png": 7,
+  "pendientes": "/content/EPS_Aguas_del_Sur_Taller10/evidencias/S10/VALIDACIONES_PENDIENTES.md"
+}

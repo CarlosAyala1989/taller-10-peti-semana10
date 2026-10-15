@@ -1,0 +1,9 @@
+﻿paquete,nombre,brechas,cantidad_brechas,dependencias,fase_topologica,esfuerzo_maximo
+PT-01,Gobierno y calidad del dato,BR-03; BR-12,2,Ninguna,1,Alto
+PT-02,Protección de la red industrial,BR-01; BR-14,2,Ninguna,1,Alto
+PT-07,Continuidad y recuperación,BR-07; BR-10,2,Ninguna,1,Alto
+PT-08,Seguridad y gobierno digital,BR-08; BR-09; BR-11,3,Ninguna,1,Medio
+PT-03,Trazabilidad de lecturas,BR-02; BR-13,2,PT-01,2,Medio
+PT-04,Gestión de reclamos,BR-04,1,PT-01,2,Alto
+PT-05,Integraciones autorizadas,BR-05,1,PT-01; PT-02,2,Alto
+PT-06,Indicadores regulatorios,BR-06,1,PT-01; PT-03; PT-05,3,Medio

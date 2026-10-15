@@ -1,0 +1,30 @@
+[
+  {
+    "archivo": "FICHA.md",
+    "url": "https://raw.githubusercontent.com/OscarJimenezFlores/PETI/main/SEMANA-10/RECURSOS-TALLER/EMPRESA-08-eps-aguas-del-sur/FICHA.md",
+    "git_blob_sha": "add04124bdb5183ba4c6b993fb7a8095c2d3b2e1",
+    "sha256": "30b3c0a3ad68852943626ab23e76e345b38ca603f57201ebf36985eb131dcd59",
+    "verificacion": "descargado y verificado"
+  },
+  {
+    "archivo": "arquitectura-actual.md",
+    "url": "https://raw.githubusercontent.com/OscarJimenezFlores/PETI/main/SEMANA-10/RECURSOS-TALLER/EMPRESA-08-eps-aguas-del-sur/arquitectura-actual.md",
+    "git_blob_sha": "963b572b4fd0700481808e1a19a0f7ff2604738b",
+    "sha256": "b5ec34ecd79fb7421db63c4ab19fc81bfbcad719efec8baf2b07dc54fceba384",
+    "verificacion": "descargado y verificado"
+  },
+  {
+    "archivo": "3-TALLER.md",
+    "url": "https://raw.githubusercontent.com/OscarJimenezFlores/PETI/main/SEMANA-10/3-TALLER.md",
+    "git_blob_sha": "ff08e28d8a5a5823eeaaa566938c22046b5c31b5",
+    "sha256": "33fc3115ed4b96ecb99f67e83e1926f0a87bee25e4297825adabac9ceb713047",
+    "verificacion": "descargado y verificado"
+  },
+  {
+    "archivo": "AR03_brechas_ejemplo.py",
+    "url": "https://raw.githubusercontent.com/OscarJimenezFlores/PETI/main/SEMANA-10/RECURSOS-TALLER/AR03_brechas.py",
+    "git_blob_sha": "c0b0170af13dea777a41fb6f5fb752cbd409a664",
+    "sha256": "38c4849bc03a8748d7491bd93b66174507319d9e7d4767e121c9fc710664b9f6",
+    "verificacion": "descargado y verificado"
+  }
+]

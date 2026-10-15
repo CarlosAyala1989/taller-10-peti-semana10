@@ -1,0 +1,7 @@
+﻿Proceso,Sistemas que lo soportan,Valoración propuesta,Evidencia
+Catastro comercial de usuarios,Sistema comercial; Excel conciliación,Parcial: 3100 discrepancias tarifarias,"Inventario 2,3,5"
+Lectura de medidores y facturación,Micromedición; sistema comercial,"Deficiente: archivo eliminado, 11200 conexiones estimadas","Inventario 4,5; Ficha G"
+Cobranza y corte/reconexión,Sistema comercial; traspaso manual SIAF,Parcial: transcripción manual,"Inventario 3,4"
+Atención de reclamos comerciales,Formulario web; Excel reclamos; comercial,Deficiente: múltiples estados/plazos,"Inventario 2,4,5"
+Operación de plantas y redes,SCADA,Riesgo alto: switches compartidos IT/OT,Ficha C/H; inventario 6
+Contrataciones y presupuesto público,SIAF y patrimonio; Excel indicadores SUNASS,Parcial: revisar integraciones y reportería,"Ficha D; inventario 2,4"
